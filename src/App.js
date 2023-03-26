@@ -3,6 +3,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import './app.scss'
 import Home from './pages/home/Home.jsx'
 import Products from './pages/products/Products.jsx'
 import Product from './pages/product/Product.jsx'
