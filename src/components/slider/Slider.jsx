@@ -22,7 +22,6 @@ const Slider = () => {
         }else{
             newSlideNumber = slideNumber === 2 ? 0: slideNumber+1;
         }
-
         setSlideNumber(newSlideNumber)
     }
 
