@@ -1,8 +1,9 @@
 import React from 'react';
-import Card from '../card/Card';
-import './featuredProducts.scss'
+import './list.scss'
+import Card from '../card/Card.jsx'
 
-const FeaturedProducts = ({type}) => {
+const List = () => {
+
     const photos = [
         {
             id: 1,
@@ -38,26 +39,16 @@ const FeaturedProducts = ({type}) => {
             price: 12
         },
     ];
-    
+
     return (
-        <div className='featuredProducts'>
-            <div className="top">
-                <h1>{type} products</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Tempore quae facilis delectus sequi aliquam, id incidunt labore cupiditate ipsa deleniti sint. 
-                    Sit ex porro similique nisi? Repellendus rerum ipsum odit!
-                    Sit ex porro similique nisi? Repellendus rerum ipsum odit!
-                    Sit ex porro similique nisi? Repellendus rerum ipsum odit!
-                </p>
-            </div>
-            <div className="bottom">
-               {photos.map((item) => 
-                <Card item={item} key={item.id}/>
-               )}
-            </div>
+        <div className='list'>
+            {
+                photos.map( (item) => (
+                    <Card item={item} key={item.id}/>
+                ))
+            }
         </div>
     );
 }
 
-export default FeaturedProducts;
+export default List;

@@ -6,7 +6,6 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
-// import germanyLogo from "../img/germany.png"
 
 const Navbar = () => {
     return (
@@ -14,7 +13,7 @@ const Navbar = () => {
             <div className="wrapper">
                 <div className="left">
                     <div className="item">
-                        <img src="img/germany.png" alt=""/>
+                        <img src="/img/germany.png" alt=""/>
                         <KeyboardArrowDownIcon/>
                     </div>
                     <div className="item">
